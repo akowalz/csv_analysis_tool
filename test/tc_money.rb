@@ -1,4 +1,4 @@
-require "./analyze_money.rb"
+require "../analyze_money.rb"
 require "test/unit"
 
 
