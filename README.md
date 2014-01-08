@@ -6,6 +6,8 @@ This is a tool I wrote in order to figure out more about my banking history.  My
 
 on each line.  So, by parsing through the lines and data on each line, I can get a set of all my transactions.
 
+Why not do this in Excel you might ask?  That's a great question.  This mostly just for fun and as an excersize using Ruby.  Other than that, there isn't really a good reason for it.
+
 The code implements two classes, `BankHistory` and a subclass `Transaction` to analyze the files. Transaction is mostly just a struct to put the info about each transaction, and BankHistory is a set of these transactions with methods to analyze the set.
 
 The most forward-facing public method is `sum_with_requirements` in `analyze_money.rb`.  It will analyze the current banking history with options provided by the user. Available options currently include start date, end date, amount, and description.  It's main purpose is finding the total amount spent on transactions that meet the requirements. 
